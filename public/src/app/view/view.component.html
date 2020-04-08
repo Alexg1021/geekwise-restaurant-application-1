@@ -30,19 +30,19 @@
 
 <table class="table table-striped">
 
-  <tbody>
+  <tbody *ngFor="let order of orders">
     <tr>
 
-      <td>Margarita Pizza</td>
-      <td>Ordered at 7:30pm by John</td>
-      <td>Qty: 1</td>
+      <td>{{order.name}}</td>
+      <td>Ordered at {{order.createdAt}} by John</td>
+      <td>Qty: {{order.qty}}</td>
       <td>
         <button class="btn btn-info mr-1">edit</button>
         <button class="btn btn-danger">delete</button>
       </td>
 
     </tr>
-    <tr>
+    <!-- <tr>
 
       <td>Fish Taco</td>
       <td>Ordered at 2:40pm by Emma</td>
@@ -61,6 +61,6 @@
         <button class="btn btn-info mr-1">edit</button>
         <button class="btn btn-danger">delete</button>
       </td>
-    </tr>
+    </tr> -->
   </tbody>
 </table>

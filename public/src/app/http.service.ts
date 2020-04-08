@@ -8,8 +8,14 @@ export class HttpService {
 
   constructor(private _http: HttpClient) { }
 
-  getAll() {
-    return this._http.get('/')
+  getOrders() {
+    return this._http.get('/orders')
   }
+
+  deleteOrder(id) {
+    return this._http.delete(`/vieworders/${id}`)
+  }
+
+
 
 }
