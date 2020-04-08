@@ -13,7 +13,7 @@ export class HttpService {
   }
 
   newOrder(orders){
-    return this._http.post('/new', orders)
+    return this._http.post('/add', orders)
   }
 
   deleteOrder(id){
