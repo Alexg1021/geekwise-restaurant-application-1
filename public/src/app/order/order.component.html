@@ -1,11 +1,8 @@
 <!-- title  -->
 
 <div class="text-center mt-5">
-
   <h1 class="display-4">Nunoo's Diner</h1>
-
   <hr class="my-4">
-
 </div>
 
 <!-- navbar -->
@@ -27,7 +24,6 @@
 
 <!-- order form  -->
 
-
 <form (submit)="onSubmit()" class="">
   <!-- {{newOrder | json}}
   {{orderError | json}} -->
@@ -42,7 +38,6 @@
 
   </div>
 
-
   <div class="form-group">
     <label for="exampleFormControlSelect1">Qty</label>
     <select class="form-control col-1" id="exampleFormControlSelect1" name="newOrder.qty" [(ngModel)]="newOrder.qty">
@@ -54,8 +49,4 @@
   </div>
 
   <input type="submit" class="btn btn-secondary mt-2" id="">
-
-
-
-
 </form>

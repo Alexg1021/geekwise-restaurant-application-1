@@ -20,8 +20,4 @@ export class HttpService {
     return this._http.delete(`/view/${id}`)
   }
 
- 
-
-
-
 }

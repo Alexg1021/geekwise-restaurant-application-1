@@ -24,8 +24,6 @@ app.use(bodyParser.urlencoded({
     extended: true
 }));
 
-
-
 // ========================== 
 // Schemas
 // ========================== 
@@ -43,10 +41,8 @@ var OrderSchema = new mongoose.Schema({
 mongoose.model('Order', OrderSchema);
 var Order = mongoose.model('Order');
 
-
-
 // ========================== 
-// Routes to show all oders
+// Route to show all oders
 // ========================== 
 
 app.get('/view', (req, res) => {

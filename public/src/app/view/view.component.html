@@ -1,11 +1,8 @@
 <!-- title -->
 
 <div class="text-center mt-5">
-
   <h1 class="display-4">Nunoo's Diner</h1>
-
   <hr class="my-4">
-
 </div>
 
 
@@ -25,14 +22,11 @@
   </div>
 </nav>
 
-
 <!-- table  -->
 
 <table class="table table-striped">
-
   <tbody *ngFor="let order of orders">
     <tr>
-
       <td>{{order.name}}</td>
       <td>Ordered at {{order.createdAt}} by John</td>
       <td>Qty: {{order.qty}}</td>
@@ -40,8 +34,6 @@
         <!-- <button class="btn btn-info mr-1">edit</button> -->
         <button class="btn btn-danger" (click)='deleteOrders(order._id)'>delete</button>
       </td>
-
     </tr>
-   
   </tbody>
 </table>
