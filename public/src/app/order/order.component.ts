@@ -24,7 +24,7 @@ export class OrderComponent implements OnInit {
 
   ngOnInit() {
   }
-  
+
   onSubmit() {
     this._httpService.newOrder(this.newOrder).subscribe(data => {
       console.log(data)
