@@ -6,7 +6,6 @@ var bodyParser = require('body-parser');
 const flash = require('express-flash')
 
 var mongoose = require('mongoose');
-
 mongoose.connect('mongodb://localhost/orders', {
     useNewUrlParser: true,
     useUnifiedTopology: true
