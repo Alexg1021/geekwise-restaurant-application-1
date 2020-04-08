@@ -49,7 +49,7 @@ var Order = mongoose.model('Order');
 // Routes to show all oders
 // ========================== 
 
-app.get('/vieworders', (req, res) => {
+app.get('/view', (req, res) => {
     Order.find({}, (err, orders) => {
         if (err) {
             console.log("returned error", err);
@@ -91,7 +91,7 @@ app.post('/add', (req, res) => {
 // Route to delete to oder
 // ========================== 
 
-app.delete('vieworders/:id', (req, res) => {
+app.delete('view/:id', (req, res) => {
     Order.findByIdAndRemove(req.params.id, (err) => {
         if (err) {
             console.log("Returned error", err);
