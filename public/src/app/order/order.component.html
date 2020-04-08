@@ -1,31 +1,58 @@
-
-<!-- title  -->
-
-<div class="text-center mt-5">
-    
-    <h1 class="display-4">Nunoo's Diner</h1>
-    <hr class="my-4">
-
-</div>
-
 <!-- navbar -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Nunoo's</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Order <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="/vieworders">View Orders</a>
-        <a class="nav-item nav-link" href="/">Log Out</a>
-      </div>
+<nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
+  <a class="navbar-brand" href="#">Nunoo's</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="/orders">Order <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="/vieworders">View Orders</a>
+      <a class="nav-item nav-link" href="/">Log Out</a>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- order form  -->
+<!-- order form  -->
 
-  
+<div class="row">
+  <div class="col-sm">
+  </div>
+  <div class="col-sm">
+    <form (submit)="onSubmit()" class="">
+      <!-- {{newOrder | json}}
+            {{orderError | json}} -->
+      <div class="form-group">
 
- 
+        <label for="exampleFormControlSelect1">I'd Like to Order:</label>
+        <select class="form-control" id="exampleFormControlSelect1" name="newOrder.name" [(ngModel)]="newOrder.name">
+          <option>Margarita Pizza</option>
+          <option>Fish Tacos</option>
+          <option>Chef's Choice Nigiri</option>
+          <option>Fried Chicken Sandwich</option>
+        </select>
+        <small class="text-danger">{{ orderError.name }} </small>
+      </div>
+
+      <div class="form-group">
+
+        <label for="exampleFormControlSelect1">Qty:</label>
+        <select class="form-control col-6" id="exampleFormControlSelect1" name="newOrder.qty" [(ngModel)]="newOrder.qty">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+        </select>
+        <small class="text-danger">{{ orderError.qty }} </small>
+
+      </div>
+
+      <input type="submit" class="btn btn-secondary mt-2">
+    </form>
+
+  </div>
+  <div class="col-sm">
+  </div>
+</div>

@@ -8,11 +8,11 @@ import { ViewComponent } from './view/view.component';
 
 
 const routes: Routes = [
-  {path: '', component: HomeComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'order', component: OrderComponent},
-  {path: 'vieworders', component: ViewComponent},
-  {path: '', pathMatch: 'full', redirectTo: '/'},
+  { path: '', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'order', component: OrderComponent },
+  { path: 'vieworders', component: ViewComponent },
+  { path: '', pathMatch: 'full', redirectTo: '/' },
 ]
 
 

@@ -8,8 +8,16 @@ export class HttpService {
 
   constructor(private _http: HttpClient) { }
 
-  getAll() {
-    return this._http.get('/products')
+  getOrders() {
+    return this._http.get('/view')
+  }
+
+  newOrder(orders){
+    return this._http.post('/add', orders)
+  }
+
+  deleteOrders(id){
+    return this._http.delete(`/view/${id}`)
   }
 
 }
