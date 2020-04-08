@@ -8,7 +8,7 @@ export class HttpService {
 
   constructor(private _http: HttpClient) { }
 
-  getAll() {
+  getOrders() {
     return this._http.get('/view')
   }
 
@@ -16,13 +16,11 @@ export class HttpService {
     return this._http.post('/add', orders)
   }
 
-  deleteOrder(id){
+  deleteOrders(id){
     return this._http.delete(`/view/${id}`)
   }
 
-  deleteOrder(id) {
-    return this._http.delete(`/vieworders/${id}`)
-  }
+ 
 
 
 

@@ -10,11 +10,10 @@ export class ViewComponent implements OnInit {
   
   orders: any;
 
-
   constructor(private _httpService: HttpService) { }
 
   ngOnInit() {
-    this.getOrders();
+    this.getOrders(); 
   }
 
   getOrders(){
@@ -24,8 +23,8 @@ export class ViewComponent implements OnInit {
     })
   }
 
-  deleteOrder(id){
-    this._httpService.deleteOrder(id).subscribe( data => {
+  deleteOrders(id){
+    this._httpService.deleteOrders(id).subscribe( data => {
       console.log('deleted')
       this.getOrders();
     })

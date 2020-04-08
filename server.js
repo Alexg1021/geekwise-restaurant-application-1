@@ -91,7 +91,7 @@ app.post('/add', (req, res) => {
 // Route to delete to oder
 // ========================== 
 
-app.delete('view/:id', (req, res) => {
+app.delete('/view/:id', (req, res) => {
     Order.findByIdAndRemove(req.params.id, (err) => {
         if (err) {
             console.log("Returned error", err);
