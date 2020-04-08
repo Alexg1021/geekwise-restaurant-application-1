@@ -9,7 +9,7 @@ export class HttpService {
   constructor(private _http: HttpClient) { }
 
   getAll() {
-    return this._http.get('/products')
+    return this._http.get('/')
   }
 
 }
