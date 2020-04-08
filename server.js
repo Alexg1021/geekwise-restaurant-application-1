@@ -49,7 +49,7 @@ var Order = mongoose.model('Order');
 // Routes to show all oders
 // ========================== 
 
-app.get('/vieworders', (req, res) => {
+app.get('/view', (req, res) => {
     Order.find({}, (err, orders) => {
         if (err) {
             console.log("returned error", err);
