@@ -9,3 +9,11 @@ body{
     min-height: 800px;
     
 }
+
+.box{
+    height: auto;
+    width: 100%;
+    margin: auto auto;
+    margin-top: 50px;
+    /* border: 5px solid black; */
+}
