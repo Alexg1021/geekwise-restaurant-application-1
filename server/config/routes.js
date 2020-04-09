@@ -5,13 +5,13 @@ const mongoose = require('mongoose'),
     Order = mongoose.model('Order')
 module.exports = (app) => {
 
-    // Route to show all oders
+    // Route to show all orders
     app.get('/view', orders.index);
 
-    // Route to add to oder
+    // Route to add order
     app.post('/add', orders.create);
 
-    // Route to delete to oder
+    // Route to delete order
     app.delete('/view/:id', orders.destroy);
 
     // 404 re-routing
@@ -19,4 +19,3 @@ module.exports = (app) => {
         res.sendFile(path.resolve("./public/dist/public/index.html"))
     });
 }
-

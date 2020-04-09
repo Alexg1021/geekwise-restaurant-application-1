@@ -3,10 +3,10 @@ var Order = mongoose.model("Order")
 
 module.exports = {
 
-// Show all orders
+    // Show all orders
 
-    index:  (req, res) => {
-        Order.find({},  (err, orders) => {
+    index: (req, res) => {
+        Order.find({}, (err, orders) => {
             if (err) {
                 console.log("returned error", err);
                 res.json({
@@ -22,7 +22,7 @@ module.exports = {
         })
     },
 
-// Create an order
+    // Create an order
 
     create: (req, res) => {
         Order.create(req.body, (err, orders) => {
@@ -41,7 +41,7 @@ module.exports = {
         })
     },
 
-// Delete an order
+    // Delete an order
 
     destroy: (req, res) => {
         Order.findByIdAndRemove(req.params.id, (err) => {

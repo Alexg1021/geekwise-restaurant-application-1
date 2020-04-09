@@ -1,7 +1,6 @@
 // Database Models/Schemas
 
 var mongoose = require('mongoose');
-
 var OrderSchema = new mongoose.Schema({
     name: {
         type: String,

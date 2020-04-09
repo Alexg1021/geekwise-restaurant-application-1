@@ -1,4 +1,4 @@
-<!-- navbar -->
+<!-- order page navbar -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
   <a class="navbar-brand" routerLink="/">Nunoo's</a>
@@ -22,10 +22,7 @@
   </div>
   <div class="col-sm">
     <form (submit)="onSubmit()" class="">
-      <!-- {{newOrder | json}}
-            {{orderError | json}} -->
       <div class="form-group">
-
         <label for="exampleFormControlSelect1">I'd Like to Order:</label>
         <select class="form-control" id="exampleFormControlSelect1" name="newOrder.name" [(ngModel)]="newOrder.name">
           <option>Margarita Pizza</option>
@@ -35,24 +32,23 @@
         </select>
         <small class="text-danger">{{ orderError.name }} </small>
       </div>
-
       <div class="form-group">
-
         <label for="exampleFormControlSelect1">Qty:</label>
-        <select class="form-control col-6" id="exampleFormControlSelect1" name="newOrder.qty" [(ngModel)]="newOrder.qty">
+        <select class="form-control col-6" id="exampleFormControlSelect1" name="newOrder.qty"
+          [(ngModel)]="newOrder.qty">
           <option>1</option>
           <option>2</option>
           <option>3</option>
           <option>4</option>
         </select>
         <small class="text-danger">{{ orderError.qty }} </small>
-
       </div>
-
       <input type="submit" class="btn btn-primary mt-2">
     </form>
-
   </div>
   <div class="col-sm">
   </div>
 </div>
+
+<!-- {{newOrder | json}}
+      {{orderError | json}} -->

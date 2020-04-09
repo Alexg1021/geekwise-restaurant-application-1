@@ -1,4 +1,5 @@
-<!-- navbar  -->
+<!-- view page navbar  -->
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light mb-5">
   <a class="navbar-brand" routerLink="/">Nunoo's</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
@@ -23,7 +24,6 @@
       <td>Ordered at {{order.createdAt}} by Shawn  </td>
       <td>Qty: {{order.qty}}</td>
       <td>
-        <!-- <button class="btn btn-info mr-1">edit</button> -->
         <button class="btn btn-danger" (click)='deleteOrders(order._id)'>Delete</button>
       </td>
     </tr>

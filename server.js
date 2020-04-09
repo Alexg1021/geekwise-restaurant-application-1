@@ -12,11 +12,9 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.use(flash());
 app.use(bodyParser.json());
-
 app.use(bodyParser.urlencoded({
     extended: true
 }));
-
 app.use(session({
     secret: "Over 9000!",
     saveUninitialized: true,
