@@ -5,8 +5,8 @@ module.exports = {
 
 // Show all orders
 
-    index: function (req, res) {
-        Order.find({}, function (err, orders) {
+    index:  (req, res) => {
+        Order.find({},  (err, orders) => {
             if (err) {
                 console.log("returned error", err);
                 res.json({
@@ -24,8 +24,8 @@ module.exports = {
 
 // Create an order
 
-    create: function (req, res) {
-        Order.create(req.body, function (err, orders) {
+    create: (req, res) => {
+        Order.create(req.body, (err, orders) => {
             if (err) {
                 console.log("returned error", err);
                 res.json({
@@ -43,8 +43,8 @@ module.exports = {
 
 // Delete an order
 
-    destroy: function (req, res) {
-        Order.findByIdAndRemove(req.params.id, function (err) {
+    destroy: (req, res) => {
+        Order.findByIdAndRemove(req.params.id, (err) => {
             if (err) {
                 console.log("Returned error", err);
                 res.json({

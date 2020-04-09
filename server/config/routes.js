@@ -3,7 +3,7 @@ var orders = require("../controllers/orders.js");
 
 const mongoose = require('mongoose'),
     Order = mongoose.model('Order')
-module.exports = function(app)  {
+module.exports = (app) => {
 
     // Route to show all oders
     app.get('/view', orders.index);
