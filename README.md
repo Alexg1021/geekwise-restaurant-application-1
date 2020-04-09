@@ -6,11 +6,11 @@ Within your terminal navigate to the public folder
 
 Run `npm install` 
 
+(For the next 2 steps make sure to fix any stated vulnerabiites using the suggested `npm audit fix` command. Avoid using `npm audit fix --force`) 
+
 Run `npm i --save-dev @angular/compiler-cli` 
 
 Run `npm i @angular-devkit/build-angular@0.803.24` 
-
-(Make sure to fix any stated vulnerabiites using the suggested `npm audit fix` command) 
 
 Next run `ng build --watch` to create the dist folder
 
