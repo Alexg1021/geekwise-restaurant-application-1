@@ -20,3 +20,9 @@ Run `nodemon server.js` to start the server.
 
 Go to `http://localhost:4200/`
 
+## Video Demos 
+
+desktop: https://www.youtube.com/watch?v=MYKL3O6Tv_s
+
+mobile: https://www.youtube.com/watch?v=dFGyvJUwTQ4
+
