@@ -4,12 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "heroku-postbuild": "ng build --prod",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "build": "ng build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@angular/cli": "^9.1.1",
+    "@angular/compiler-cli": "^9.1.1",
     "axios": "^0.19.2",
     "body-parser": "^1.19.0",
     "ejs": "^3.0.2",
@@ -19,5 +24,15 @@
     "mongoose": "^5.9.7",
     "path": "^0.12.7",
     "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "^9.1.1",
+    "@angular/compiler-cli": "^9.1.1",
+    "enhanced-resolve": "^3.3.0",
+    "typescript": "~2.3.3"
+  },
+  "engines": {
+    "node": "10.16.0",
+    "npm": "6.14.4"
   }
 }
