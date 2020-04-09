@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "ng build --aot -prod",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "build": "ng build"
   },
   "keywords": [],
@@ -28,7 +28,7 @@
   "devDependencies": {
     "@angular/cli": "^9.1.1",
     "@angular/compiler-cli": "^9.1.1",
-    "enhanced-resolve": "^3.3.0",
+    "enhanced-resolve": "^3.4.1",
     "typescript": "~2.3.3"
   },
   "engines": {
