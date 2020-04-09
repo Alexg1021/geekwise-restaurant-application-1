@@ -31,7 +31,8 @@ app.use(session({
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/orders', {
     useNewUrlParser: true,
-    useUnifiedTopology: true
+    useUnifiedTopology: true,
+    useFindAndModify: false
 });
 mongoose.Promise = global.Promise;
 require("./server/config/mongoose.js");
