@@ -20,11 +20,11 @@
   <tbody *ngFor="let order of orders">
     <tr>
       <td>{{order.name}}</td>
-      <td>Ordered at {{order.createdAt}} by Shawn</td>
+      <td>Ordered at {{order.createdAt}} by Shawn  </td>
       <td>Qty: {{order.qty}}</td>
       <td>
         <!-- <button class="btn btn-info mr-1">edit</button> -->
-        <button class="btn btn-danger" (click)='deleteOrders(order._id)'>delete</button>
+        <button class="btn btn-danger" (click)='deleteOrders(order._id)'>Delete</button>
       </td>
     </tr>
   </tbody>
